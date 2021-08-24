@@ -1,9 +1,9 @@
-//Ä£ÄâÊµÏÖstrcompº¯Êı
+//æ¨¡æ‹Ÿå®ç°strcmpå‡½æ•°
 #define _CRT_SECURE_NO_WARNINGS 1
 
 
 /*
-//Ê×ÏÈÊ¹ÓÃ³£¹æº¯Êı
+//é¦–å…ˆä½¿ç”¨å¸¸è§„å‡½æ•°
 #include<stdio.h>
 
 int my_strcomp(char x[], char y[])
@@ -28,17 +28,17 @@ int main()
 {
 	char arr[] = "abcde";
 	char password[] = "";
-	printf("ÇëÊäÈëÃÜÂë:");
+	printf("è¯·è¾“å…¥å¯†ç :");
 	scanf("%s", &password);
 	if (1 == my_strcomp(arr, password))
-		printf("¹§Ï²Äã£¬Í¨¹ı");
+		printf("æ­å–œä½ ï¼Œé€šè¿‡");
 	else
-		printf("±§Ç¸£¬ÃÜÂë´íÎó£¡");
+		printf("æŠ±æ­‰ï¼Œå¯†ç é”™è¯¯ï¼");
 	return 0;
 }*/
 
 
-//ÀûÓÃº¯Êıµİ¹é·½·¨
+//åˆ©ç”¨å‡½æ•°é€’å½’æ–¹æ³•
 
 #include<stdio.h>
 
@@ -58,11 +58,11 @@ int main()
 {
 	char password[] = "abcd";
 	char input[] = "";
-	printf("ÇëÊäÈëÃÜÂë£º");
+	printf("è¯·è¾“å…¥å¯†ç ï¼š");
 	scanf("%s", &input);
 	if (1 == my_strcomp2(input, password))
-		printf("¹§Ï²Äã£¬Í¨¹ıÁË£¡\n");
+		printf("æ­å–œä½ ï¼Œé€šè¿‡äº†ï¼\n");
 	else
-		printf("±§Ç¸£¬ÃÜÂë´íÎó£¡\n");
+		printf("æŠ±æ­‰ï¼Œå¯†ç é”™è¯¯ï¼\n");
 	return 0;
 }
